@@ -28,6 +28,10 @@ public class CuentaAhorros extends CuentaBancaria {
         }
     }
 
+    public double calcularInteresDelMes() {
+        return getSaldo() * tasaInteresMensual / 100;
+    }
+
     public boolean realizarRetiro(double monto, boolean esUrgente){
         super.realizarRetiro(monto);
         if(esUrgente && getSaldo() < saldoMinimo){
