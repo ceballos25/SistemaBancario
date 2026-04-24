@@ -15,7 +15,7 @@ public class Main {
 //        System.out.println("--------------------------- Calculamos comision");
 //        System.out.println("Cuenta 2:\n" +  cuenta2.calcularComision());
 
-        System.out.println(cuenta2.realizarRetiro(80000, true));
+        System.out.println(cuenta2.realizarRetiro(10000, true));
         System.out.println(cuenta2.describir());
 
 
