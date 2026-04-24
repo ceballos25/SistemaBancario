@@ -3,6 +3,9 @@ public class CuentaBancaria {
     private String titular;
     private double saldo;
 
+    public CuentaBancaria() {
+    }
+
     public CuentaBancaria(String numeroCuenta, String titular, double saldo) {
         this.numeroCuenta = numeroCuenta;
         this.titular = titular;
@@ -45,5 +48,7 @@ public class CuentaBancaria {
     public void  realizarRetiro(double monto){
         setSaldo(-monto);
     }
+
+
 }
 
